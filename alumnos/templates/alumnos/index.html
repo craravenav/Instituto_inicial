@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% load static %}
+
+    <h1>Primera Apps en django</h1>
+
+    <h3>{{nombre}} tiene un hijo que se llama {{hijo.nombre}} que tiene {{hijo.edad}} años de edad</h3>
+
+    <ol>
+        {% for comida in comidas %}
+           <li>{{comida}}</li>
+        {% endfor %}
+    </ol>
+
+    <img src="{% static 'alumnos/img/descarga.jfif' %}" alt="">
+
+
+</body>
+</html>
